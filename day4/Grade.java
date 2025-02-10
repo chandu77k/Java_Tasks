@@ -12,12 +12,12 @@ public class Grade {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter marks : ");
-		int n=sc.nextInt();
-		if(n<0 || n>100) {
+		int marks=sc.nextInt();
+		if(marks<0 || marks>100) {
 			System.out.println("Invalid");
 		}
 		else {
-			int gradepoint=n/10;
+			int gradepoint=marks/10;
 			switch(gradepoint) {
 			case 10: case 9:
 				System.out.println("Grade A");
@@ -31,7 +31,7 @@ public class Grade {
 			case 6:
 				System.out.println("Grade D");
 				break;
-			case 5: case 4: case 3: case 2: case 1: case 0:
+			default:
 				System.out.println("Grade F");
 				break;
 			

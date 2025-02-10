@@ -12,15 +12,15 @@ public class Series {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter range : ");
 		int range=sc.nextInt();
-		for(int i=1;i<=range;i++) {
-			if(i%5==0) {
+		for(int iteration=1;iteration<=range;iteration++) {
+			if(iteration%5==0) {
 				continue;
 			}
-			if(i%2==0) {
-				System.out.println(i+" is divisible by 2");
+			if(iteration%2==0) {
+				System.out.println(iteration+" is divisible by 2");
 			}
-			else if(i%3==0) {
-				System.out.println(i+" is divisible by 3");
+			else if(iteration%3==0) {
+				System.out.println(iteration+" is divisible by 3");
 			}
 		}
 		sc.close();

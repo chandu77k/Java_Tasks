@@ -15,8 +15,8 @@ public class Multiplication {
 		int number=sc.nextInt();
 		System.out.println("Enter range : ");
 		int range=sc.nextInt();
-		for(int i=1;i<=range;i++) {
-			int product = number*i;
+		for(int iteration=1;iteration<=range;iteration++) {
+			int product = number*iteration;
 
 			if(product>50) {
 				break;
@@ -24,7 +24,7 @@ public class Multiplication {
 			if(product%3==0) {
 				continue;
 			}
-			System.out.println(number+" x "+i+" : " + product);
+			System.out.println(number+" x "+iteration+" : " + product);
 		}
 		sc.close();
 

@@ -7,13 +7,13 @@ import java.util.Scanner;
  * @apiNote It prints prime numbers upto a range
  */
 public class Prime {
-	public static void number(int n) {
+	public static void number(int range) {
 		int count=0;
 		int number=2;
-		while(count<n) {
+		while(count<range) {
 			boolean primenum=true;
-		    for(int i=2;i<=Math.sqrt(number);i++) {
-			if(number%i==0) {
+		    for(int iteration=2;iteration<=Math.sqrt(number);iteration++) {
+			if(number%iteration==0) {
 				primenum = false;
 				break;
 			}
@@ -41,8 +41,8 @@ public class Prime {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter Range : ");
-		int n=sc.nextInt();
-		number(n);
+		int range=sc.nextInt();
+		number(range);
 		sc.close();
 		
 	}

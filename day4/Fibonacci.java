@@ -12,20 +12,20 @@ public class Fibonacci {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the range : ");
         int range = scanner.nextInt();
-        int a = 0, b = 1;
-        for (int i=0;i<=range;i++) {
-            if (a % 3 == 0 && a % 5 == 0) {
-                System.out.println(a + ": I am spiderman and ironman");
-            } else if (a % 3 == 0) {
-                System.out.println(a + ": I am spiderman");
-            } else if (a % 5 == 0) {
-                System.out.println(a + ": I am ironman");
+        int alpha = 0, beta = 1;
+        for (int iteration=0;iteration<=range;iteration++) {
+            if (alpha % 3 == 0 && alpha % 5 == 0) {
+                System.out.println(alpha + ": I am spiderman and ironman");
+            } else if (alpha % 3 == 0) {
+                System.out.println(alpha + ": I am spiderman");
+            } else if (alpha % 5 == 0) {
+                System.out.println(alpha + ": I am ironman");
             } else {
-                System.out.println(a + ": I am zero");
+                System.out.println(alpha + ": I am zero");
             }
-            int next = a + b;
-            a = b;
-            b = next;
+            int next = alpha + beta;
+            alpha = beta;
+            beta = next;
         }
         scanner.close();
     }

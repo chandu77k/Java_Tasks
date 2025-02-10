@@ -9,17 +9,15 @@ import java.util.*;
  */
 
 public class Pattern {
-	public static void range(int n) {
-		for (int i = 1; i <= n; i++) {
-            if (i % 2 == 0) {
-                for (int j = 1; j <= i; j++) {
-                    System.out.print(i);
-                }
-            } 
-            else {
-                for (int j = 1; j <= i; j++) {
-                    System.out.print("*");
-                }
+	public static void range(int number) {
+		for (int iteration = 1; iteration <= number; iteration++) {
+            for(int j_iter=1;j_iter<=iteration;j_iter++) {
+            	if(iteration%2==0) {
+            		System.out.print(iteration);
+            	}
+            	else {
+            		System.out.print("*");
+            	}
             }
             System.out.println();
         }
@@ -28,8 +26,8 @@ public class Pattern {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter range : ");
-		int n=sc.nextInt();
-		range(n);
+		int number=sc.nextInt();
+		range(number);
 		sc.close();
 	}
 }
