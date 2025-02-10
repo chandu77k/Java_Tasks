@@ -12,8 +12,7 @@ public class Grade {
 		else {
 			int gradepoint=n/10;
 			switch(gradepoint) {
-			case 10:
-			case 9:
+			case 10: case 9:
 				System.out.println("Grade A");
 				break;
 			case 8:
@@ -25,12 +24,7 @@ public class Grade {
 			case 6:
 				System.out.println("Grade D");
 				break;
-			case 5:
-			case 4:
-			case 3:
-			case 2:
-			case 1:
-			case 0:
+			case 5: case 4: case 3: case 2: case 1: case 0:
 				System.out.println("Grade F");
 				break;
 			
