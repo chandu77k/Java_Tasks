@@ -1,5 +1,12 @@
 package day4;
 import java.util.*;
+/**
+ * In this program we print the pattern based on the conditions
+ * if the line number is even it print numbers
+ * if the line number is odd it prints *
+ * @author chandrashekar
+ * @apiNote It prints patterns upto a range
+ */
 
 public class Pattern {
 	public static void range(int n) {

@@ -1,5 +1,11 @@
 package day4;
 import java.util.*;
+/**
+ * This program used to print the numbers which are divisible by 2,3
+ * if the number is divisible by 5 it skips
+ * @author chandrashekar
+ * @apiNote It prints the numbers based on the given conditions
+ */
 public class Series {
 
 	public static void main(String[] args) {

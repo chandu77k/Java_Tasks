@@ -1,5 +1,12 @@
 package day4;
 import java.util.*;
+/**
+ * Here we print grades using the marks
+ * In if condition i have checked whether the number is less than 0 or greater than 100
+ * In else condition i have checked the grade points by the formula and divided the grade points 
+ * @author chandrashekar
+ * @apiNote It's a program to check grade points 
+ */
 public class Grade {
 
 	public static void main(String[] args) {

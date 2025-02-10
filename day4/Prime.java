@@ -1,5 +1,11 @@
 package day4;
 import java.util.Scanner;
+/**
+ * In this program we print prime numbers upto a range.
+ * used switch case to print different conditions
+ * @author chandrashekar
+ * @apiNote It prints prime numbers upto a range
+ */
 public class Prime {
 	public static void number(int n) {
 		int count=0;

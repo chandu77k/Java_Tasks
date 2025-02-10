@@ -1,6 +1,11 @@
 package day4;
 import java.util.Scanner;
-
+/**
+ * Here we print Fibonacci series upto a range
+ * 'a','b' variables are initialized and series started from there
+ * @author chandrashekar
+ * @apiNote It's a program to print first n fibonacci numbers
+ */
 public class Fibonacci {
 
     public static void main(String[] args) {
