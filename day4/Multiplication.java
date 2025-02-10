@@ -14,7 +14,7 @@ public class Multiplication {
 			if((product)>50) {
 				break;
 			}
-			if(i==3) {
+			if(product%3==0) {
 				continue;
 			}
 			System.out.println(number+" x "+i+" : " + product);
